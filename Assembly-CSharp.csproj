@@ -51,10 +51,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ColorPicker\CameraBgColor.cs" />
+     <Compile Include="Assets\ColorPicker\ColorPicker.cs" />
+     <Compile Include="Assets\ColorPicker\DemoGUI_ColorPickerDemo.cs" />
+     <Compile Include="Assets\ColorPicker\DrawGUIOrderColorPicker.cs" />
+     <Compile Include="Assets\ColorPicker\ObjectColor.cs" />
+     <Compile Include="Assets\ColorPicker\PSColor.cs" />
+     <Compile Include="Assets\ColorPickerTriangle\Example\example.cs" />
+     <Compile Include="Assets\ColorPickerTriangle\Scripts\ColorPickerTriangle.cs" />
      <Compile Include="Assets\Pickupable.cs" />
      <Compile Include="Assets\PickupObject.cs" />
+     <None Include="Assets\ColorPicker\license.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\ColorPickerTriangle\Shaders\VertexColor.shader" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
  <Reference Include="UnityEngine.UI">

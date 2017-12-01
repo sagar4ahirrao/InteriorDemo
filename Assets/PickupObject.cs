@@ -5,6 +5,7 @@ public class PickupObject : MonoBehaviour {
 	GameObject mainCamera;
 	bool carrying;
 	bool rotating;
+	bool coloring;
 	public GameObject carriedObject;
 	public float distance;
 	public float smooth;
@@ -23,9 +24,44 @@ public class PickupObject : MonoBehaviour {
 //			rotateObject (carriedObject);
 //			checkDrop ();
 //		}
+		if(coloring){
+			makeColor (carriedObject);
+			checkStop (carriedObject);
+		}
 		else {
 			pickup();
+			changeColor ();
 			//checkRotate ();
+		}
+	}
+	void checkStop(GameObject c){
+		if(Input.GetKeyDown (KeyCode.C)) {
+			c.GetComponent<ObjectColor>().c.GetComponent<ColorPicker>().useExternalDrawer = true;
+			coloring = false;
+			carriedObject = null;
+		}
+	}
+	void makeColor(GameObject c){
+		c.GetComponent<ObjectColor>().c.GetComponent<ColorPicker>().useExternalDrawer = false;
+	
+	}
+	void changeColor(){
+		if(Input.GetKeyDown (KeyCode.C)) {
+			Debug.Log ("coloring");
+			int x = Screen.width / 2;
+			int y = Screen.height / 2;
+
+			Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x,y));
+			RaycastHit hit;
+			if(Physics.Raycast(ray, out hit)) {
+				ObjectColor c = hit.collider.GetComponent<ObjectColor>();
+				if(c != null) {
+					coloring = true;
+					carriedObject = c.gameObject;
+					//p.gameObject.rigidbody.isKinematic = true;
+					//c.gameObject.GetComponent<Rigidbody>().useGravity = false;
+				}
+			}
 		}
 	}
 
@@ -94,11 +130,11 @@ public class PickupObject : MonoBehaviour {
 	}
 
 	void dropObject() {
-		Debug.Log ("Dropdown");
 		rotating = false;
 		carrying = false;
 		//carriedObject.gameObject.GetComponent<Rigidbody>().isKinematic = false;
 		carriedObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
+		Debug.Log ("Dropdown");
 		//carriedObject.gameObject.GetComponent<Rigidbody>().isKinematic = true;
 		carriedObject = null;
 	}
