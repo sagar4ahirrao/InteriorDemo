@@ -51,6 +51,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorBase.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorEffect.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorTriggerProxy.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorTriggerProxy2D.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorTriggerProxyBase.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorVolume.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorVolume2D.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorVolumeBase.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs" />
      <Compile Include="Assets\ColorPicker\CameraBgColor.cs" />
      <Compile Include="Assets\ColorPicker\ColorPicker.cs" />
      <Compile Include="Assets\ColorPicker\DemoGUI_ColorPickerDemo.cs" />
@@ -61,8 +72,19 @@
      <Compile Include="Assets\ColorPickerTriangle\Scripts\ColorPickerTriangle.cs" />
      <Compile Include="Assets\Pickupable.cs" />
      <Compile Include="Assets\PickupObject.cs" />
+     <None Include="Assets\AmplifyColor\Resources\MaskBlend.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Blend.shader" />
+     <None Include="Assets\AmplifyColor\Resources\BlendCache.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Mask.shader" />
+     <None Include="Assets\AmplifyColor\Samples\Check out the full LUT Package.txt" />
      <None Include="Assets\ColorPicker\license.txt" />
+     <None Include="Assets\AmplifyColor\Readme.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\AmplifyColor\Resources\ProcessOnly.shader" />
+     <None Include="Assets\AmplifyColor\Resources\DepthMask.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Common.cginc" />
+     <None Include="Assets\AmplifyColor\Resources\DepthMaskBlend.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Base.shader" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\ColorPickerTriangle\Shaders\VertexColor.shader" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
@@ -87,6 +109,9 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity2017.1f1/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="AmplifyColor">
+ <HintPath>D:/Unity Practice/interior/Assets/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

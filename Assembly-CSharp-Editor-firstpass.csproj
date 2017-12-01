@@ -52,8 +52,19 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+     <None Include="Assets\AmplifyColor\Resources\MaskBlend.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Blend.shader" />
+     <None Include="Assets\AmplifyColor\Resources\BlendCache.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Mask.shader" />
+     <None Include="Assets\AmplifyColor\Samples\Check out the full LUT Package.txt" />
      <None Include="Assets\ColorPicker\license.txt" />
+     <None Include="Assets\AmplifyColor\Readme.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\AmplifyColor\Resources\ProcessOnly.shader" />
+     <None Include="Assets\AmplifyColor\Resources\DepthMask.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Common.cginc" />
+     <None Include="Assets\AmplifyColor\Resources\DepthMaskBlend.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Base.shader" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\ColorPickerTriangle\Shaders\VertexColor.shader" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
@@ -120,6 +131,12 @@
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity2017.1f1/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="AmplifyColor">
+ <HintPath>D:/Unity Practice/interior/Assets/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
+ </Reference>
+ <Reference Include="AmplifyColorEditor">
+ <HintPath>D:/Unity Practice/interior/Assets/AmplifyColor/Plugins/Editor/AmplifyColorEditor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
